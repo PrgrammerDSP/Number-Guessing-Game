@@ -12,10 +12,10 @@ def replay():
 def task(l , h):
     no = randint(l , h)
     chances = round((h+l)/2)
-    print(f"You have {chances} to find the number")
+    print(f"You have {chances} chances to find the number")
     while chances != 0:
         chances -= 1
-        print(f"You have {chances} left")
+        print(f"You have {chances} chances left")
         try:
             guess = int(input("Guess the number : "))
         except:
